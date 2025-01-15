@@ -1,0 +1,2 @@
+docker network connect demo demo-inserter
+docker run -d --name demo-inserter --network demo 
