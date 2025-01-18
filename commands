@@ -1,2 +1,3 @@
 docker network connect demo demo-inserter
-docker run -d --name demo-inserter --network demo 
+docker run -d --name demo-inserter --network demo demo-inserter
+docker inspect <container_name_or_id> | grep -A 20 "NetworkSettings"
